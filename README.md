@@ -11,8 +11,16 @@ Nsysu thesis Latex Template with latex environment and vscode easy setup. this d
 1. 下載docker latex環境image，並建立container.
 ```shell
 docker pull chengyouhu/latex:v5
-docke run -d --name [container name] chengyouhu/latex:v5 -v [local latex dir path]:/home/latex
 ```
+
+```shell
+docker run -it --name nsysu-latex -v $(pwd):/home/latex --rm chengyouhu/latex:v5
+```
+
+```shell
+latexmk -xelatex thesis.tex
+```
+
 [local latex dir path]就是`git clone`下來後專案資料夾的路徑。這樣可以將自己電腦端的專案資料夾跟container中的`/home/latex`連結。
 2. 安裝vscode docker擴充程式
 3. 側邊欄選擇docker，進container，看到建立的container後右鍵選attach vscode，這樣vscode就進latex環境了，開啟資料夾選擇剛剛設立的`/home/latex`。
