@@ -13,8 +13,14 @@ Nsysu thesis Latex Template with latex environment and vscode easy setup. this d
 docker pull chengyouhu/latex:v5
 ```
 
+Linux:
 ```shell
 docker run -it --name nsysu-latex -v $(pwd):/home/latex --rm chengyouhu/latex:v5
+```
+
+Windows PowerShell:
+```shell
+  docker run -it --name nsysu-latex -v ${PWD}:/home/latex --rm chengyouhu/latex:v5
 ```
 
 ```shell
