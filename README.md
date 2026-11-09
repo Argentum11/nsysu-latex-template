@@ -77,8 +77,8 @@ latexmk -c
   - `cover.tex` 封面頁
   - `validation_letter.tex` 論文審定書
   - `acknowledgement.tex` 誌謝
-  - `chi_abstract.tex` 中文摘要
-  - `en_abstract.tex` 英文摘要
+  - `abstract_zh-TW.tex` 中文摘要
+  - `abstract_en.tex` 英文摘要
 - sections
   - `introduction.tex` 介紹
   - `related_work.tex` 文獻探討
