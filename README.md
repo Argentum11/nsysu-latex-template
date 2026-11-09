@@ -27,6 +27,12 @@ Windows PowerShell:
 latexmk -xelatex thesis.tex
 ```
 
+Clean all auxiliary files (keeps the PDF file)
+
+```shell
+latexmk -c
+```
+
 [local latex dir path]就是`git clone`下來後專案資料夾的路徑。這樣可以將自己電腦端的專案資料夾跟container中的`/home/latex`連結。
 2. 安裝vscode docker擴充程式
 3. 側邊欄選擇docker，進container，看到建立的container後右鍵選attach vscode，這樣vscode就進latex環境了，開啟資料夾選擇剛剛設立的`/home/latex`。
