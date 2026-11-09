@@ -24,7 +24,7 @@ Windows PowerShell:
 ```
 
 ```shell
-latexmk -xelatex thesis.tex
+latexmk -xelatex -silent thesis.tex
 ```
 
 Clean all auxiliary files (keeps the PDF file)
